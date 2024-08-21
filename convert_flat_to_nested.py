@@ -1,5 +1,8 @@
 import json
 
+# This function converts a flat dictionary with dot-separated keys
+# into a nested dictionary structure.
+
 def nested_dict(flat_dict):
     result = {}
     for key, value in flat_dict.items():
