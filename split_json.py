@@ -1,6 +1,9 @@
 import json
 import os
 
+# This function splits a large JSON file into multiple smaller JSON files,
+# each with a maximum size specified by the user (default is 400 KB).
+
 def split_json_file(input_file, max_size_kb=400):
     # Read the input file
     with open(input_file, 'r') as file:
